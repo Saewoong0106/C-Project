@@ -92,10 +92,27 @@ namespace Project
         private async void LoadMenuButtons()
         {
             Flow_Menu.Controls.Clear();
-            List<MenuItem> menuList = ProductManager.GetMenus();
 
-            // ★ [추가됨] 여기서 MenuBook(인덱서) 초기화
-            myMenuBook = new MenuBook(menuList);
+            List<MenuItem> menuList;
+            try
+            {
+                menuList = ProductManager.GetMenus();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("메뉴를 불러오는 중 오류가 발생했습니다: " + ex.Message, "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (menuList == null || menuList.Count == 0)
+            {
+                MessageBox.Show("불러올 메뉴가 없습니다.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            // 인덱서용 초기화 (null 안전)
+            try { myMenuBook = new MenuBook(menuList); }
+            catch { myMenuBook = null; }
 
             string imageFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "MenuImages");
             string myId = Global.CurrentUserID;
@@ -104,51 +121,89 @@ namespace Project
 
             foreach (var menu in menuList)
             {
-                Button btn = new Button();
-                btn.Size = new Size(180, 220);
-                btn.BackColor = Color.White;
-                btn.FlatStyle = FlatStyle.Flat;
-                btn.Font = new Font("맑은 고딕", 11, FontStyle.Bold);
-                btn.Margin = new Padding(15);
-                btn.Tag = menu;
-
-                string displayName = menu.Name;
-                if (currentLang != "ko")
+                try
                 {
-                    displayName = await TranslationManager.TranslateAsync(menu.Name, currentLang);
+                    Button btn = new Button();
+                    btn.Size = new Size(180, 220);
+                    btn.BackColor = Color.White;
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.Font = new Font("맑은 고딕", 11, FontStyle.Bold);
+                    btn.Margin = new Padding(15);
+                    btn.Tag = menu;
+
+                    string displayName = menu?.Name ?? "(이름 없음)";
+
+                    if (currentLang != "ko")
+                    {
+                        try
+                        {
+                            var translated = await TranslationManager.TranslateAsync(menu.Name, currentLang);
+                            if (!string.IsNullOrWhiteSpace(translated)) displayName = translated;
+                        }
+                        catch
+                        {
+                            // 번역 실패 시 원본 이름 사용
+                            displayName = menu.Name;
+                        }
+                    }
+
+                    btn.Text = $"{displayName}\n{menu.Price:N0}원";
+
+                    string imagePath = Path.Combine(imageFolder, menu.Name + ".png");
+                    if (!File.Exists(imagePath)) imagePath = Path.Combine(imageFolder, menu.Name + ".jpg");
+
+                    if (File.Exists(imagePath))
+                    {
+                        try
+                        {
+                            using (var originalImg = Image.FromFile(imagePath))
+                            {
+                                btn.Image = ResizeImage(originalImg, 140, 140);
+                            }
+                        }
+                        catch
+                        {
+                            // 이미지 로드 실패는 무시하고 텍스트만 표시
+                        }
+                    }
+
+                    bool isAvailable = true;
+                    try
+                    {
+                        isAvailable = StockManager.CheckMenuAvailability(myId, menu.Id);
+                    }
+                    catch
+                    {
+                        // 재고 확인 실패 시 기본적으로 '판매 가능'으로 둬 UI가 막히지 않게 함
+                        isAvailable = true;
+                    }
+
+                    if (isAvailable)
+                    {
+                        btn.ForeColor = Color.Black;
+                    }
+                    else
+                    {
+                        string soldOutText = (currentLang == "en") ? "(Sold Out)" : (currentLang == "ja") ? "(売切れ)" : "(품절)";
+                        btn.Text = $"{displayName}\n{soldOutText}";
+                        btn.ForeColor = Color.Red;
+                        if (btn.Image != null) btn.Image = DrawSoldOutMark(btn.Image);
+                    }
+
+                    btn.Click += MenuBtn_Click;
+                    btn.TextImageRelation = TextImageRelation.ImageAboveText;
+                    btn.TextAlign = ContentAlignment.BottomCenter;
+                    btn.ImageAlign = ContentAlignment.TopCenter;
+                    btn.Padding = new Padding(0, 10, 0, 10);
+
+                    Flow_Menu.Controls.Add(btn);
                 }
-                btn.Text = $"{displayName}\n{menu.Price:N0}원";
-
-                string imagePath = Path.Combine(imageFolder, menu.Name + ".png");
-                if (!File.Exists(imagePath)) imagePath = Path.Combine(imageFolder, menu.Name + ".jpg");
-
-                if (File.Exists(imagePath))
+                catch (Exception exInner)
                 {
-                    Image originalImg = Image.FromFile(imagePath);
-                    btn.Image = ResizeImage(originalImg, 140, 140);
+                    // 개별 메뉴 처리 실패는 전체 로드에 영향을 주지 않도록 로깅하고 계속
+                    Console.WriteLine($"메뉴 생성 중 오류: {exInner.Message}");
+                    continue;
                 }
-
-                bool isAvailable = StockManager.CheckMenuAvailability(myId, menu.Id);
-
-                if (isAvailable)
-                {
-                    btn.ForeColor = Color.Black;
-                }
-                else
-                {
-                    string soldOutText = (currentLang == "en") ? "(Sold Out)" : (currentLang == "ja") ? "(売切れ)" : "(품절)";
-                    btn.Text = $"{displayName}\n{soldOutText}";
-                    btn.ForeColor = Color.Red;
-                    if (btn.Image != null) btn.Image = DrawSoldOutMark(btn.Image);
-                }
-
-                btn.Click += MenuBtn_Click;
-                btn.TextImageRelation = TextImageRelation.ImageAboveText;
-                btn.TextAlign = ContentAlignment.BottomCenter;
-                btn.ImageAlign = ContentAlignment.TopCenter;
-                btn.Padding = new Padding(0, 10, 0, 10);
-
-                Flow_Menu.Controls.Add(btn);
             }
 
             this.Text = "Cafe Kiosk";
