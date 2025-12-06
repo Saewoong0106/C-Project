@@ -1,0 +1,41 @@
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\bin\Debug\Project.exe.config
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\bin\Debug\Project.exe
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\bin\Debug\Project.pdb
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\obj\Debug\Project.LoginFrom.resources
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\obj\Debug\Project.exe
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\obj\Debug\Project.pdb
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\obj\Debug\Project.exe.config
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\bin\Debug\CafeStock.db
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\bin\Debug\System.Data.SQLite.dll
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\bin\Debug\System.Data.SQLite.xml
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\obj\Debug\Project.csproj.Up2Date
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\obj\Debug\Project.MainForm.resources
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\obj\Debug\Project.IngredientManageForm.resources
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\obj\Debug\Project.MenuManageForm.resources
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\obj\Debug\Project.SalesStockForm.resources
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\개인 프로젝트\Project\Project\obj\Debug\Project.SalesViewForm.resources
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.exe.config
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.IngredientManageForm.resources
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.LoginFrom.resources
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.MainForm.resources
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.MenuManageForm.resources
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.SalesStockForm.resources
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.SalesViewForm.resources
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.exe
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.pdb
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\bin\Debug\CafeStock.db
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\bin\Debug\Project.exe.config
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\bin\Debug\Project.exe
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\bin\Debug\Project.pdb
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\bin\Debug\System.Data.SQLite.dll
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\bin\Debug\System.Data.SQLite.xml
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.csproj.Up2Date
+C:\Users\op862\OneDrive\Desktop\대학교\2학년 2학기\C#\20242966 강세웅 개인 프로젝트\개인 프로젝트\Project\Project\obj\Debug\Project.KioskForm.resources

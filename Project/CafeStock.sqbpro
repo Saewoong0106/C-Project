@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="CafeStock.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1791"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Ingredients" custom_title="0" dock_id="1" table="4,11:mainIngredients"/><dock_state state="000000ff00000000fd00000001000000020000000000000000fc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000015300ffffff000000000000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">-- 1. 자식 테이블 먼저 삭제 (참조 걸린 것들)
+DROP TABLE IF EXISTS Stock;
+DROP TABLE IF EXISTS SalesLogs;
+DROP TABLE IF EXISTS Recipes;
+
+-- 2. 부모 테이블 삭제
+DROP TABLE IF EXISTS MenuItems;
+DROP TABLE IF EXISTS Ingredients;
+DROP TABLE IF EXISTS Users;
+
+-- ==========================================
+-- 3. 테이블 재생성 (MinStock 추가됨!)
+-- ==========================================
+
+-- 재료 테이블 (여기에 기준값 MinStock 저장)
+CREATE TABLE &quot;Ingredients&quot; (
+	&quot;IngredientID&quot;	INTEGER PRIMARY KEY AUTOINCREMENT,
+	&quot;Name&quot;			TEXT NOT NULL,
+	&quot;Unit&quot;			TEXT,
+	&quot;MinStock&quot;		REAL DEFAULT 5 -- 기본값 5
+);
+
+-- 메뉴 테이블
+CREATE TABLE &quot;MenuItems&quot; (
+	&quot;MenuItemID&quot;	INTEGER PRIMARY KEY AUTOINCREMENT,
+	&quot;Name&quot;			TEXT NOT NULL,
+	&quot;Price&quot;			INTEGER
+);
+
+-- 레시피 테이블
+CREATE TABLE &quot;Recipes&quot; (
+	&quot;RecipeID&quot;		INTEGER PRIMARY KEY AUTOINCREMENT,
+	&quot;MenuItemID&quot;	INTEGER,
+	&quot;IngredientID&quot;	INTEGER,
+	&quot;Amount&quot;		REAL,
+	FOREIGN KEY(&quot;MenuItemID&quot;) REFERENCES &quot;MenuItems&quot;(&quot;MenuItemID&quot;),
+	FOREIGN KEY(&quot;IngredientID&quot;) REFERENCES &quot;Ingredients&quot;(&quot;IngredientID&quot;)
+);
+
+-- 재고 테이블
+CREATE TABLE &quot;Stock&quot; (
+	&quot;StockID&quot;		INTEGER PRIMARY KEY AUTOINCREMENT,
+	&quot;OwnerID&quot;		TEXT,
+	&quot;IngredientID&quot;	INTEGER,
+	&quot;Quantity&quot;		REAL DEFAULT 0,
+	FOREIGN KEY(&quot;IngredientID&quot;) REFERENCES &quot;Ingredients&quot;(&quot;IngredientID&quot;)
+);
+
+-- 매출 테이블
+CREATE TABLE &quot;SalesLogs&quot; (
+	&quot;SaleID&quot;	INTEGER PRIMARY KEY AUTOINCREMENT,
+	&quot;OwnerID&quot;	TEXT,
+	&quot;SaleDate&quot;	TEXT DEFAULT CURRENT_TIMESTAMP,
+	&quot;MenuName&quot;	TEXT,
+	&quot;Qty&quot;		INTEGER,
+	&quot;TotalAmt&quot;	INTEGER
+);
+
+-- 사용자 테이블
+CREATE TABLE &quot;Users&quot; (
+	&quot;UserID&quot;	TEXT PRIMARY KEY,
+	&quot;Password&quot;	TEXT NOT NULL
+);
+
+-- ==========================================
+-- 4. 데이터 채우기 (기준값 설정 포함)
+-- ==========================================
+
+INSERT INTO Users VALUES ('boss1', '1234');
+
+-- ★ 핵심: 재료별로 최소 기준(MinStock) 다르게 설정!
+INSERT INTO Ingredients (IngredientID, Name, Unit, MinStock) VALUES (1, '원두', 'kg', 10);   -- 최소 10kg
+INSERT INTO Ingredients (IngredientID, Name, Unit, MinStock) VALUES (2, '물', 'L', 10);      -- 최소 10L
+INSERT INTO Ingredients (IngredientID, Name, Unit, MinStock) VALUES (3, '우유', 'L', 20);     -- 최소 20L
+INSERT INTO Ingredients (IngredientID, Name, Unit, MinStock) VALUES (4, '시럽', '병', 3);     -- 최소 3병
+INSERT INTO Ingredients (IngredientID, Name, Unit, MinStock) VALUES (5, '얼음', '봉', 50);    -- 최소 50봉
+INSERT INTO Ingredients (IngredientID, Name, Unit, MinStock) VALUES (6, '종이컵', '개', 100); -- 최소 100개
+
+-- 메뉴 및 레시피
+INSERT INTO MenuItems VALUES (1, '아메리카노', 2000);
+INSERT INTO MenuItems VALUES (2, '카페라떼', 3000);
+
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) VALUES (1, 1, 20); -- 아아: 원두
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) VALUES (1, 2, 200);-- 아아: 물
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) VALUES (2, 1, 20); -- 라떼: 원두
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) VALUES (2, 3, 150);-- 라떼: 우유
+
+-- ★ 테스트용 재고 (boss1) - 색깔 확인용
+-- 원두(기준10): 0개 -&gt; 빨강(품절)
+INSERT INTO Stock (OwnerID, IngredientID, Quantity) VALUES ('boss1', 1, 0);
+-- 우유(기준20): 5개 -&gt; 주황(부족)
+INSERT INTO Stock (OwnerID, IngredientID, Quantity) VALUES ('boss1', 3, 5);
+-- 종이컵(기준100): 200개 -&gt; 초록(충분)
+INSERT INTO Stock (OwnerID, IngredientID, Quantity) VALUES ('boss1', 6, 200);
+-- 시럽(기준3): 5개 -&gt; 초록(충분)
+INSERT INTO Stock (OwnerID, IngredientID, Quantity) VALUES ('boss1', 4, 5);</sql><current_tab id="0"/></tab_sql></sqlb_project>
