@@ -129,5 +129,37 @@ namespace Project
                 MessageBox.Show("데이터 로드 오류: " + ex.Message);
             }
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            IngredientManageForm nextForm = new IngredientManageForm();
+
+            // 2. 매니저에게 맡기기 (현재 폼, 다음 폼)
+            MenuManager.OpenForm(this, nextForm);
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            MenuManageForm nextForm = new MenuManageForm();
+
+            // 2. 매니저에게 맡기기 (현재 폼, 다음 폼)
+            MenuManager.OpenForm(this, nextForm);
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            SalesStockForm nextForm = new SalesStockForm();
+
+            // 2. 매니저에게 맡기기 (현재 폼, 다음 폼)
+            MenuManager.OpenForm(this, nextForm);
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            SalesViewForm nextForm = new SalesViewForm();
+
+            // 2. 매니저에게 맡기기 (현재 폼, 다음 폼)
+            MenuManager.OpenForm(this, nextForm);
+        }
     }
 }

@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panelTop = new System.Windows.Forms.Panel();
             this.Btn_Sales = new System.Windows.Forms.Button();
@@ -54,6 +54,10 @@
             this.colMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.Panel_Warning = new System.Windows.Forms.Panel();
+            this.Panel_Header = new System.Windows.Forms.Panel();
+            this.Label_MainExp = new System.Windows.Forms.Label();
+            this.Label_Main = new System.Windows.Forms.Label();
             this.Box_4 = new CafeStockSystem.RoundGroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -74,12 +78,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Label_IngredientNum = new System.Windows.Forms.Label();
             this.Label_Ingredient = new System.Windows.Forms.Label();
-            this.Panel_Warning = new System.Windows.Forms.Panel();
             this.Box_Warning = new CafeStockSystem.RoundGroupBox();
             this.Box_WarningExp = new System.Windows.Forms.Label();
-            this.Panel_Header = new System.Windows.Forms.Panel();
-            this.Label_MainExp = new System.Windows.Forms.Label();
-            this.Label_Main = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelTop.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -87,13 +87,13 @@
             this.Panel_List.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Stock)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
+            this.Panel_Warning.SuspendLayout();
+            this.Panel_Header.SuspendLayout();
             this.Box_4.SuspendLayout();
             this.Box_3.SuspendLayout();
             this.Box_2.SuspendLayout();
             this.Box_1.SuspendLayout();
-            this.Panel_Warning.SuspendLayout();
             this.Box_Warning.SuspendLayout();
-            this.Panel_Header.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -280,14 +280,14 @@
             this.Dgv_Stock.BackgroundColor = System.Drawing.Color.White;
             this.Dgv_Stock.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Dgv_Stock.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dgv_Stock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_Stock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.Dgv_Stock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_Stock.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colStatus,
@@ -309,8 +309,8 @@
             // colStatus
             // 
             this.colStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colStatus.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colStatus.DefaultCellStyle = dataGridViewCellStyle16;
             this.colStatus.HeaderText = "상태";
             this.colStatus.Name = "colStatus";
             this.colStatus.ReadOnly = true;
@@ -319,8 +319,8 @@
             // colName
             // 
             this.colName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.colName.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.colName.DefaultCellStyle = dataGridViewCellStyle17;
             this.colName.HeaderText = "원재료명";
             this.colName.Name = "colName";
             this.colName.ReadOnly = true;
@@ -328,8 +328,8 @@
             // colUnit
             // 
             this.colUnit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colUnit.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colUnit.DefaultCellStyle = dataGridViewCellStyle18;
             this.colUnit.HeaderText = "단위";
             this.colUnit.Name = "colUnit";
             this.colUnit.ReadOnly = true;
@@ -338,8 +338,8 @@
             // colStock
             // 
             this.colStock.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.colStock.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.colStock.DefaultCellStyle = dataGridViewCellStyle19;
             this.colStock.HeaderText = "현재 재고";
             this.colStock.Name = "colStock";
             this.colStock.ReadOnly = true;
@@ -348,8 +348,8 @@
             // colMin
             // 
             this.colMin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.colMin.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.colMin.DefaultCellStyle = dataGridViewCellStyle20;
             this.colMin.HeaderText = "최소 재고";
             this.colMin.Name = "colMin";
             this.colMin.ReadOnly = true;
@@ -358,8 +358,8 @@
             // colRate
             // 
             this.colRate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.colRate.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.colRate.DefaultCellStyle = dataGridViewCellStyle21;
             this.colRate.HeaderText = "재고율";
             this.colRate.Name = "colRate";
             this.colRate.ReadOnly = true;
@@ -383,6 +383,46 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1578, 150);
             this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // Panel_Warning
+            // 
+            this.Panel_Warning.Controls.Add(this.Box_Warning);
+            this.Panel_Warning.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Panel_Warning.Location = new System.Drawing.Point(0, 56);
+            this.Panel_Warning.Name = "Panel_Warning";
+            this.Panel_Warning.Size = new System.Drawing.Size(1578, 60);
+            this.Panel_Warning.TabIndex = 0;
+            // 
+            // Panel_Header
+            // 
+            this.Panel_Header.Controls.Add(this.Label_MainExp);
+            this.Panel_Header.Controls.Add(this.Label_Main);
+            this.Panel_Header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Panel_Header.Location = new System.Drawing.Point(0, 0);
+            this.Panel_Header.Name = "Panel_Header";
+            this.Panel_Header.Size = new System.Drawing.Size(1578, 56);
+            this.Panel_Header.TabIndex = 0;
+            // 
+            // Label_MainExp
+            // 
+            this.Label_MainExp.AutoSize = true;
+            this.Label_MainExp.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_MainExp.ForeColor = System.Drawing.Color.DimGray;
+            this.Label_MainExp.Location = new System.Drawing.Point(9, 27);
+            this.Label_MainExp.Name = "Label_MainExp";
+            this.Label_MainExp.Size = new System.Drawing.Size(246, 17);
+            this.Label_MainExp.TabIndex = 1;
+            this.Label_MainExp.Text = "실시간 원재료 재고 현황 및 시스템 관리";
+            // 
+            // Label_Main
+            // 
+            this.Label_Main.AutoSize = true;
+            this.Label_Main.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_Main.Location = new System.Drawing.Point(9, -3);
+            this.Label_Main.Name = "Label_Main";
+            this.Label_Main.Size = new System.Drawing.Size(146, 30);
+            this.Label_Main.TabIndex = 0;
+            this.Label_Main.Text = "메인 대시보드";
             // 
             // Box_4
             // 
@@ -411,6 +451,7 @@
             this.label8.Size = new System.Drawing.Size(74, 21);
             this.label8.TabIndex = 4;
             this.label8.Text = "관리하기";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label4
             // 
@@ -470,6 +511,7 @@
             this.label7.Size = new System.Drawing.Size(74, 21);
             this.label7.TabIndex = 4;
             this.label7.Text = "관리하기";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label3
             // 
@@ -529,6 +571,7 @@
             this.label6.Size = new System.Drawing.Size(74, 21);
             this.label6.TabIndex = 4;
             this.label6.Text = "관리하기";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label2
             // 
@@ -588,6 +631,7 @@
             this.label5.Size = new System.Drawing.Size(74, 21);
             this.label5.TabIndex = 0;
             this.label5.Text = "관리하기";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label1
             // 
@@ -620,15 +664,6 @@
             this.Label_Ingredient.TabIndex = 0;
             this.Label_Ingredient.Text = "원재료 관리";
             // 
-            // Panel_Warning
-            // 
-            this.Panel_Warning.Controls.Add(this.Box_Warning);
-            this.Panel_Warning.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Warning.Location = new System.Drawing.Point(0, 56);
-            this.Panel_Warning.Name = "Panel_Warning";
-            this.Panel_Warning.Size = new System.Drawing.Size(1578, 60);
-            this.Panel_Warning.TabIndex = 0;
-            // 
             // Box_Warning
             // 
             this.Box_Warning.BackColor = System.Drawing.Color.White;
@@ -652,37 +687,6 @@
             this.Box_WarningExp.TabIndex = 1;
             this.Box_WarningExp.Text = "5";
             // 
-            // Panel_Header
-            // 
-            this.Panel_Header.Controls.Add(this.Label_MainExp);
-            this.Panel_Header.Controls.Add(this.Label_Main);
-            this.Panel_Header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Header.Location = new System.Drawing.Point(0, 0);
-            this.Panel_Header.Name = "Panel_Header";
-            this.Panel_Header.Size = new System.Drawing.Size(1578, 56);
-            this.Panel_Header.TabIndex = 0;
-            // 
-            // Label_MainExp
-            // 
-            this.Label_MainExp.AutoSize = true;
-            this.Label_MainExp.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Label_MainExp.ForeColor = System.Drawing.Color.DimGray;
-            this.Label_MainExp.Location = new System.Drawing.Point(9, 27);
-            this.Label_MainExp.Name = "Label_MainExp";
-            this.Label_MainExp.Size = new System.Drawing.Size(246, 17);
-            this.Label_MainExp.TabIndex = 1;
-            this.Label_MainExp.Text = "실시간 원재료 재고 현황 및 시스템 관리";
-            // 
-            // Label_Main
-            // 
-            this.Label_Main.AutoSize = true;
-            this.Label_Main.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Label_Main.Location = new System.Drawing.Point(9, -3);
-            this.Label_Main.Name = "Label_Main";
-            this.Label_Main.Size = new System.Drawing.Size(146, 30);
-            this.Label_Main.TabIndex = 0;
-            this.Label_Main.Text = "메인 대시보드";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -701,6 +705,9 @@
             this.Panel_List.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Stock)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.Panel_Warning.ResumeLayout(false);
+            this.Panel_Header.ResumeLayout(false);
+            this.Panel_Header.PerformLayout();
             this.Box_4.ResumeLayout(false);
             this.Box_4.PerformLayout();
             this.Box_3.ResumeLayout(false);
@@ -709,11 +716,8 @@
             this.Box_2.PerformLayout();
             this.Box_1.ResumeLayout(false);
             this.Box_1.PerformLayout();
-            this.Panel_Warning.ResumeLayout(false);
             this.Box_Warning.ResumeLayout(false);
             this.Box_Warning.PerformLayout();
-            this.Panel_Header.ResumeLayout(false);
-            this.Panel_Header.PerformLayout();
             this.ResumeLayout(false);
 
         }

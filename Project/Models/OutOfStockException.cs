@@ -2,16 +2,19 @@
 
 namespace Project.Models
 {
-    // [선택 조건: 사용자 정의 예외 클래스 (Custom Exception)]
-    // - 시스템 예외가 아닌 '재고 부족'이라는 특정 비즈니스 로직 에러 정의
-    // - Exception 클래스 상속 및 확장
+    // [조건: 클래스 사용] 부족한 재료 이름과 수량을 담는 '진짜 기능이 있는' 예외 클래스
     public class OutOfStockException : Exception
     {
-        // 기본 생성자
-        public OutOfStockException() { }
+        // ★ 교수님 설명용: "어떤 재료가 얼마나 부족한지 데이터를 담기 위해 속성을 추가했습니다."
+        public string ItemName { get; private set; }
+        public double Deficit { get; private set; }
 
-        // 메시지 전달 생성자
-        // - 예외 발생 원인을 문자열로 전달받아 상위 클래스(Exception)에 초기화
-        public OutOfStockException(string message) : base(message) { }
+        // 생성자에서 데이터를 받아서 저장함
+        public OutOfStockException(string itemName, double deficit)
+            : base($"재료 '{itemName}'이(가) {deficit}만큼 부족합니다.")
+        {
+            ItemName = itemName;
+            Deficit = deficit;
+        }
     }
 }

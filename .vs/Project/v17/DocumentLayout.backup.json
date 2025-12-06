@@ -3,64 +3,92 @@
   "WorkspaceRootPath": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\ingredientmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\ingredientmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\kioskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\kioskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|c:\\users\\op862\\onedrive\\desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\c#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\project\\project\\forms\\kioskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\kioskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\kioskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\menumanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\menumanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\salesviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\salesviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|c:\\users\\op862\\onedrive\\desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\c#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\project\\project\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\salesstockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\salesstockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|c:\\users\\op862\\onedrive\\desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\c#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\project\\project\\forms\\salesstockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\salesstockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\menumanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\menumanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\kioskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\kioskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|c:\\users\\op862\\onedrive\\desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\c#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\project\\project\\managers\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\managers\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\ingredientmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\ingredientmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|c:\\users\\op862\\onedrive\\desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\c#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\project\\project\\forms\\salesviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\salesviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\managers\\salesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\managers\\salesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\managers\\stockmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\managers\\stockmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|c:\\users\\op862\\onedrive\\desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\c#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\project\\project\\models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|c:\\users\\op862\\onedrive\\desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\c#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\project\\project\\models\\outofstockexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\models\\outofstockexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\managers\\translationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\managers\\translationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|c:\\users\\op862\\onedrive\\desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\c#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\project\\project\\managers\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\managers\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|c:\\users\\op862\\onedrive\\desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\c#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\project\\project\\models\\loginfailedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\models\\loginfailedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\models\\outofstockexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\models\\outofstockexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\salesviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\salesviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|c:\\users\\op862\\onedrive\\desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\c#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\project\\project\\managers\\menubook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\managers\\menubook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|c:\\users\\op862\\onedrive\\desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\c#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\project\\project\\models\\datamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\models\\datamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\forms\\salesstockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\salesstockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\managers\\stockmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\managers\\stockmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\project\\managers\\translationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\managers\\translationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,32 +102,58 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SalesStockForm.cs",
-              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\SalesStockForm.cs",
-              "RelativeDocumentMoniker": "Project\\Forms\\SalesStockForm.cs",
-              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\SalesStockForm.cs",
-              "RelativeToolTip": "Project\\Forms\\SalesStockForm.cs",
-              "ViewState": "AgIAALgAAAAAAAAAAAAIwOAAAAABAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "MenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\MenuManager.cs",
+              "RelativeDocumentMoniker": "Project\\Managers\\MenuManager.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\MenuManager.cs",
+              "RelativeToolTip": "Project\\Managers\\MenuManager.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T10:28:48.186Z",
+              "WhenOpened": "2025-12-06T11:56:24.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MenuManageForm.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\MenuManageForm.cs",
-              "RelativeDocumentMoniker": "Project\\Forms\\MenuManageForm.cs",
-              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\MenuManageForm.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "Project\\Forms\\MenuManageForm.cs [\uB514\uC790\uC778]",
+              "DocumentIndex": 8,
+              "Title": "SalesViewForm.cs",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\SalesViewForm.cs",
+              "RelativeDocumentMoniker": "Project\\Forms\\SalesViewForm.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\SalesViewForm.cs",
+              "RelativeToolTip": "Project\\Forms\\SalesViewForm.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAjwC8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T14:36:15.918Z",
+              "WhenOpened": "2025-12-06T11:53:37.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "Project\\Forms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\MainForm.cs",
+              "RelativeToolTip": "Project\\Forms\\MainForm.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAtwJ4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T11:53:35.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Project\\Forms\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\LoginForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Project\\Forms\\LoginForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T13:40:49.41Z",
               "EditorCaption": " [\uB514\uC790\uC778]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MainForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "Project\\Forms\\MainForm.cs",
@@ -123,69 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginForm.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Project\\Forms\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\LoginForm.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "Project\\Forms\\LoginForm.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T13:40:49.41Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SalesStockForm.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\SalesStockForm.cs",
-              "RelativeDocumentMoniker": "Project\\Forms\\SalesStockForm.cs",
-              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\SalesStockForm.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "Project\\Forms\\SalesStockForm.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T14:36:19.415Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SalesViewForm.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\SalesViewForm.cs",
-              "RelativeDocumentMoniker": "Project\\Forms\\SalesViewForm.cs",
-              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\SalesViewForm.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "Project\\Forms\\SalesViewForm.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T14:36:22.858Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "KioskForm.cs",
-              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\KioskForm.cs",
-              "RelativeDocumentMoniker": "Project\\Forms\\KioskForm.cs",
-              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\KioskForm.cs",
-              "RelativeToolTip": "Project\\Forms\\KioskForm.cs",
-              "ViewState": "AgIAACgBAAAAAAAAAIA5wCUBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T13:58:44.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SalesManager.cs",
-              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\SalesManager.cs",
-              "RelativeDocumentMoniker": "Project\\Managers\\SalesManager.cs",
-              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\SalesManager.cs",
-              "RelativeToolTip": "Project\\Managers\\SalesManager.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAjwHEAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T13:52:02.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "IngredientManageForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\IngredientManageForm.cs",
               "RelativeDocumentMoniker": "Project\\Forms\\IngredientManageForm.cs",
@@ -197,7 +189,172 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
+              "Title": "MenuManageForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\MenuManageForm.cs",
+              "RelativeDocumentMoniker": "Project\\Forms\\MenuManageForm.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\MenuManageForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Project\\Forms\\MenuManageForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T14:36:15.918Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SalesStockForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\SalesStockForm.cs",
+              "RelativeDocumentMoniker": "Project\\Forms\\SalesStockForm.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\SalesStockForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Project\\Forms\\SalesStockForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T14:36:19.415Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KioskForm.cs",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\KioskForm.cs",
+              "RelativeDocumentMoniker": "Project\\Forms\\KioskForm.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\KioskForm.cs",
+              "RelativeToolTip": "Project\\Forms\\KioskForm.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAIwFkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T13:58:44.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Project\\Forms\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\LoginForm.cs",
+              "RelativeToolTip": "Project\\Forms\\LoginForm.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwD0AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T13:10:47.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthManager.cs",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\AuthManager.cs",
+              "RelativeDocumentMoniker": "Project\\Managers\\AuthManager.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\AuthManager.cs",
+              "RelativeToolTip": "Project\\Managers\\AuthManager.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwDAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T11:36:59.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginFailedException.cs",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\LoginFailedException.cs",
+              "RelativeDocumentMoniker": "Project\\Models\\LoginFailedException.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\LoginFailedException.cs",
+              "RelativeToolTip": "Project\\Models\\LoginFailedException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T11:36:40.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OutOfStockException.cs",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\OutOfStockException.cs",
+              "RelativeDocumentMoniker": "Project\\Models\\OutOfStockException.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\OutOfStockException.cs",
+              "RelativeToolTip": "Project\\Models\\OutOfStockException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:20:20.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SalesViewForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\SalesViewForm.cs",
+              "RelativeDocumentMoniker": "Project\\Forms\\SalesViewForm.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\SalesViewForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Project\\Forms\\SalesViewForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T14:36:22.858Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SalesManager.cs",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\SalesManager.cs",
+              "RelativeDocumentMoniker": "Project\\Managers\\SalesManager.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\SalesManager.cs",
+              "RelativeToolTip": "Project\\Managers\\SalesManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T13:52:02.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MenuBook.cs",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\MenuBook.cs",
+              "RelativeDocumentMoniker": "Project\\Managers\\MenuBook.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\MenuBook.cs",
+              "RelativeToolTip": "Project\\Managers\\MenuBook.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T11:40:03.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DataModels.cs",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\DataModels.cs",
+              "RelativeDocumentMoniker": "Project\\Models\\DataModels.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\DataModels.cs",
+              "RelativeToolTip": "Project\\Models\\DataModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:58:19.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\Inventory.cs",
+              "RelativeDocumentMoniker": "Project\\Models\\Inventory.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\Inventory.cs",
+              "RelativeToolTip": "Project\\Models\\Inventory.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvxsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:27:13.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SalesStockForm.cs",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\SalesStockForm.cs",
+              "RelativeDocumentMoniker": "Project\\Forms\\SalesStockForm.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\SalesStockForm.cs",
+              "RelativeToolTip": "Project\\Forms\\SalesStockForm.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAIwOAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:28:48.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "StockManager.cs",
               "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\StockManager.cs",
               "RelativeDocumentMoniker": "Project\\Managers\\StockManager.cs",
@@ -205,51 +362,11 @@
               "RelativeToolTip": "Project\\Managers\\StockManager.cs",
               "ViewState": "AgIAAJ4AAAAAAAAAAAAIwMYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T14:06:29.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T14:06:29.866Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Inventory.cs",
-              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\Inventory.cs",
-              "RelativeDocumentMoniker": "Project\\Models\\Inventory.cs",
-              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\Inventory.cs",
-              "RelativeToolTip": "Project\\Models\\Inventory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T10:27:13.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "OutOfStockException.cs",
-              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\OutOfStockException.cs",
-              "RelativeDocumentMoniker": "Project\\Models\\OutOfStockException.cs",
-              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\OutOfStockException.cs",
-              "RelativeToolTip": "Project\\Models\\OutOfStockException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T10:20:20.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Project\\Forms\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\LoginForm.cs",
-              "RelativeToolTip": "Project\\Forms\\LoginForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T13:10:47.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "TranslationManager.cs",
               "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\TranslationManager.cs",
               "RelativeDocumentMoniker": "Project\\Managers\\TranslationManager.cs",

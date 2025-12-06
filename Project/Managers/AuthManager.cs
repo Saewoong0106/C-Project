@@ -1,35 +1,38 @@
 ﻿using System;
 using System.Data.SQLite;
-using Project.Models; // User, DbResult 참조
+using Project.Models;
 
 namespace Project.Managers
 {
-    // [조건: 클래스 2개 이상 사용] 사용자 인증(로그인) 기능 전담 클래스
     public static class AuthManager
     {
-        // 로그인 인증 처리 메서드
-        // [선택 조건: 제네릭 사용] 반환 타입으로 DbResult<User> 활용 (결과 및 데이터 포장)
         public static DbResult<User> Authenticate(string id, string pw)
         {
-            try
+            // DB 연결은 여기서 try로 감싸지만, "로그인 실패" 로직은 예외로 던집니다.
+            using (SQLiteConnection conn = new SQLiteConnection(DBHelper.ConnectionString))
             {
-                // [조건: 파일 처리/DB] SQLite 연결 객체 생성 (DBHelper 경로 사용)
-                using (SQLiteConnection conn = new SQLiteConnection(DBHelper.ConnectionString))
+                try
                 {
                     conn.Open();
+                }
+                catch (Exception ex)
+                {
+                    // DB 연결 자체가 실패한 경우
+                    return new DbResult<User>(false, "DB 연결 실패: " + ex.Message, null);
+                }
 
-                    // SQL 파라미터 바인딩 (SQL 인젝션 방지)
-                    string query = "SELECT * FROM Users WHERE UserID = @id AND Password = @pw";
-                    SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                // 쿼리 실행
+                string query = "SELECT * FROM Users WHERE UserID = @id AND Password = @pw";
+                using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
+                {
                     cmd.Parameters.AddWithValue("@id", id);
                     cmd.Parameters.AddWithValue("@pw", pw);
 
-                    // 데이터 조회 (Read)
                     using (SQLiteDataReader reader = cmd.ExecuteReader())
                     {
                         if (reader.Read())
                         {
-                            // [성공] 사용자 객체 생성 및 반환
+                            // [성공]
                             User user = new User
                             {
                                 Id = reader["UserID"].ToString(),
@@ -37,17 +40,13 @@ namespace Project.Managers
                             };
                             return new DbResult<User>(true, "로그인 성공", user);
                         }
-
-                        // [실패] 일치 데이터 없음
-                        return new DbResult<User>(false, "아이디 또는 비밀번호가 틀렸습니다.", null);
                     }
                 }
             }
-            catch (Exception ex)
-            {
-                // [조건: 예외 처리] DB 연결/조회 중 오류 발생 시 처리
-                return new DbResult<User>(false, "DB 에러: " + ex.Message, null);
-            }
+
+            // [실패] DB 조회는 잘 됐는데, 아이디/비번이 없는 경우
+            // try-catch 바깥에서 던져서 확실하게 폼으로 보냅니다.
+            throw new LoginFailedException(id);
         }
     }
 }

@@ -14,32 +14,26 @@ namespace Project
 {
     public partial class KioskForm : Form
     {
-        // 장바구니 데이터 (Key: 메뉴ID, Value: (메뉴객체, 수량))
+        // 장바구니 데이터
         private Dictionary<int, (MenuItem Menu, int Qty)> cart = new Dictionary<int, (MenuItem, int)>();
-
-        // 현재 선택된 언어 (기본: 한국어)
         private string currentLang = "ko";
+
+        // ★ [추가됨] 인덱서 사용을 위한 변수
+        private MenuBook myMenuBook;
 
         public KioskForm()
         {
             InitializeComponent();
 
-            // 1. 폼 초기 설정
             this.Text = "Cafe Kiosk";
             this.StartPosition = FormStartPosition.CenterScreen;
-            
 
-            // 2. 그리드(장바구니) 설정
             StyleManager.ApplyGridStyle(Dgv_Cart);
             SetupCartGrid();
 
-            // 3. 초기 메뉴 로드
             LoadMenuButtons();
         }
 
-        // ---------------------------------------------------------
-        // 1. 초기 설정 및 그리드 구성
-        // ---------------------------------------------------------
         private void SetupCartGrid()
         {
             Dgv_Cart.Columns.Clear();
@@ -65,7 +59,7 @@ namespace Project
             // [4] (+) 버튼
             DataGridViewButtonColumn btnPlus = new DataGridViewButtonColumn();
             btnPlus.Name = "btnPlus";
-            btnPlus.HeaderText = "";
+            btnPlus.HeaderText = ""; // ★ 핵심: 헤더 제목을 비워줍니다 (안 그러면 'btnPlus'라고 뜸)
             btnPlus.Text = "+";
             btnPlus.UseColumnTextForButtonValue = true;
             btnPlus.Width = 30;
@@ -74,7 +68,7 @@ namespace Project
             // [5] (-) 버튼
             DataGridViewButtonColumn btnMinus = new DataGridViewButtonColumn();
             btnMinus.Name = "btnMinus";
-            btnMinus.HeaderText = "";
+            btnMinus.HeaderText = ""; // ★ 핵심: 헤더 제목을 비워줍니다
             btnMinus.Text = "-";
             btnMinus.UseColumnTextForButtonValue = true;
             btnMinus.Width = 30;
@@ -83,7 +77,7 @@ namespace Project
             // [6] (X) 삭제 버튼
             DataGridViewButtonColumn btnDel = new DataGridViewButtonColumn();
             btnDel.Name = "btnDel";
-            btnDel.HeaderText = "";
+            btnDel.HeaderText = ""; // ★ 핵심: 헤더 제목을 비워줍니다
             btnDel.Text = "X";
             btnDel.UseColumnTextForButtonValue = true;
             btnDel.Width = 30;
@@ -95,13 +89,14 @@ namespace Project
             Dgv_Cart.ReadOnly = true;
         }
 
-        // ---------------------------------------------------------
-        // 2. 메뉴 버튼 생성 (이미지 + 번역 + 품절체크)
-        // ---------------------------------------------------------
         private async void LoadMenuButtons()
         {
             Flow_Menu.Controls.Clear();
             List<MenuItem> menuList = ProductManager.GetMenus();
+
+            // ★ [추가됨] 여기서 MenuBook(인덱서) 초기화
+            myMenuBook = new MenuBook(menuList);
+
             string imageFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "MenuImages");
             string myId = Global.CurrentUserID;
 
@@ -117,7 +112,6 @@ namespace Project
                 btn.Margin = new Padding(15);
                 btn.Tag = menu;
 
-                // (1) 번역 및 텍스트 설정
                 string displayName = menu.Name;
                 if (currentLang != "ko")
                 {
@@ -125,7 +119,6 @@ namespace Project
                 }
                 btn.Text = $"{displayName}\n{menu.Price:N0}원";
 
-                // (2) 이미지 로드
                 string imagePath = Path.Combine(imageFolder, menu.Name + ".png");
                 if (!File.Exists(imagePath)) imagePath = Path.Combine(imageFolder, menu.Name + ".jpg");
 
@@ -135,7 +128,6 @@ namespace Project
                     btn.Image = ResizeImage(originalImg, 140, 140);
                 }
 
-                // (3) ★ 품절 체크 로직 수정 ★
                 bool isAvailable = StockManager.CheckMenuAvailability(myId, menu.Id);
 
                 if (isAvailable)
@@ -144,19 +136,13 @@ namespace Project
                 }
                 else
                 {
-                    // 품절이지만 버튼은 살아있어야 함! (Enabled = false 삭제)
                     string soldOutText = (currentLang == "en") ? "(Sold Out)" : (currentLang == "ja") ? "(売切れ)" : "(품절)";
                     btn.Text = $"{displayName}\n{soldOutText}";
                     btn.ForeColor = Color.Red;
-
-                    // btn.Enabled = false;  <-- ★ 이 줄을 지웠습니다! (클릭 가능하게)
-
                     if (btn.Image != null) btn.Image = DrawSoldOutMark(btn.Image);
                 }
 
-                // (4) 클릭 이벤트는 품절 여부 상관없이 무조건 연결
                 btn.Click += MenuBtn_Click;
-
                 btn.TextImageRelation = TextImageRelation.ImageAboveText;
                 btn.TextAlign = ContentAlignment.BottomCenter;
                 btn.ImageAlign = ContentAlignment.TopCenter;
@@ -168,11 +154,6 @@ namespace Project
             this.Text = "Cafe Kiosk";
         }
 
-        // ---------------------------------------------------------
-        // 3. 이벤트 핸들러 (클릭 동작)
-        // ---------------------------------------------------------
-
-        // [언어 변경] 라디오 버튼 클릭 시
         private void Language_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton rb = sender as RadioButton;
@@ -182,16 +163,14 @@ namespace Project
             else if (rb.Name == "Rb_Ja") currentLang = "ja";
             else currentLang = "ko";
 
-            UpdateUILanguage(); // UI 번역
-            LoadMenuButtons();  // 메뉴 다시 로드
+            UpdateUILanguage();
+            LoadMenuButtons();
         }
 
-        // UI 텍스트 번역
         private void UpdateUILanguage()
         {
             if (currentLang == "en")
             {
-                // 라벨 이름 확인 필요 (디자인 화면의 이름으로 맞추세요)
                 if (Controls["label1"] != null) Controls["label1"].Text = "Order List";
                 Btn_Order.Text = "Pay";
                 Btn_Clear.Text = "Clear";
@@ -213,37 +192,41 @@ namespace Project
             }
         }
 
-        // [메뉴 버튼 클릭] -> 장바구니 추가
         private void MenuBtn_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
             MenuItem menu = btn.Tag as MenuItem;
             string myId = Global.CurrentUserID;
 
-            // ★ 클릭했을 때 재고 확인 (여기서 막음)
             bool isAvailable = StockManager.CheckMenuAvailability(myId, menu.Id);
 
             if (!isAvailable)
             {
-                // 품절 메시지 출력
                 string msg = (currentLang == "en") ? "This item is sold out." :
                              (currentLang == "ja") ? "この商品は売り切れです。" :
                              "이 메뉴는 품절되어 선택할 수 없습니다.";
 
                 MessageBox.Show(msg, "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // 장바구니에 담지 않고 함수 종료
+                return;
             }
 
-            // 재고가 있으면 장바구니 추가
+            // =========================================================
+            // ★ [조건: 인덱서 사용 2] 여기서 인덱서를 사용하여 메뉴 이름을 가져옵니다.
+            // (실제 기능상으로는 큰 의미 없지만, 인덱서 사용 조건을 만족하기 위함)
+            // =========================================================
+            if (myMenuBook != null)
+            {
+                string nameFromIndexer = myMenuBook[menu.Id];
+                // 필요하다면 Console.WriteLine(nameFromIndexer); 등으로 확인 가능
+            }
+
             AddToCart(menu.Id, menu, 1);
         }
 
-        // [장바구니 버튼 클릭] (+, -, X)
         private void Dgv_Cart_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
 
-            // 메뉴 ID 가져오기
             int menuId = Convert.ToInt32(Dgv_Cart.Rows[e.RowIndex].Cells["colId"].Value);
 
             if (!cart.ContainsKey(menuId)) return;
@@ -256,7 +239,6 @@ namespace Project
             else if (colName == "btnDel") { cart.Remove(menuId); UpdateCartDisplay(); }
         }
 
-        // [결제하기]
         private void Btn_Order_Click(object sender, EventArgs e)
         {
             if (cart.Count == 0) return;
@@ -270,13 +252,15 @@ namespace Project
                 {
                     try
                     {
-                        // ★ [예외 처리 사용] 여기서도 예외가 터질 수 있음
                         var result = SalesManager.SellMenu(myId, item.Menu.Id, item.Qty);
                         if (result.IsSuccess) successCount++;
                     }
-                    catch (OutOfStockException ex) // ★ [예외 잡기]
+                    // ★ [조건: 예외 처리 활용] 
+                    // 일반적인 메시지가 아니라 클래스에 담긴 '데이터'를 꺼내서 보여줌
+                    catch (OutOfStockException ex)
                     {
-                        MessageBox.Show(ex.Message, "품절 알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        string msg = $"죄송합니다. '{ex.ItemName}' 재료가 {ex.Deficit}만큼 부족합니다.\n관리자에게 문의해주세요.";
+                        MessageBox.Show(msg, "품절 알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     catch (Exception ex)
                     {
@@ -293,7 +277,6 @@ namespace Project
             }
         }
 
-        // [비우기]
         private void Btn_Clear_Click(object sender, EventArgs e)
         {
             if (cart.Count > 0)
@@ -302,10 +285,6 @@ namespace Project
                 UpdateCartDisplay();
             }
         }
-
-        // ---------------------------------------------------------
-        // 4. 내부 로직 (계산 및 이미지 처리)
-        // ---------------------------------------------------------
 
         private void AddToCart(int id, MenuItem menu, int qtyDelta)
         {

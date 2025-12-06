@@ -61,6 +61,7 @@
     </Compile>
     <Compile Include="Managers\AuthManager.cs" />
     <Compile Include="Managers\DbHelper.cs" />
+    <Compile Include="Managers\MenuBook.cs" />
     <Compile Include="Managers\MenuManager.cs" />
     <Compile Include="Managers\ProductManager.cs" />
     <Compile Include="Managers\SalesManager.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="Models\DbResult.cs" />
     <Compile Include="Models\Global.cs" />
     <Compile Include="Models\Inventory.cs" />
+    <Compile Include="Models\LoginFailedException.cs" />
     <Compile Include="Models\OutOfStockException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
