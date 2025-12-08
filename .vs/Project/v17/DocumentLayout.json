@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|c:\\users\\op862\\onedrive\\desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\c#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\project\\project\\managers\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\managers\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|c:\\users\\op862\\onedrive\\desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\c#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\project\\project\\forms\\kioskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D617CB65-3FCD-4C34-A9C9-FD3008C63A1B}|Project\\Project.csproj|solutionrelative:project\\forms\\kioskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,19 +55,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\MenuManager.cs",
+              "RelativeDocumentMoniker": "Project\\Managers\\MenuManager.cs",
+              "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\MenuManager.cs",
+              "RelativeToolTip": "Project\\Managers\\MenuManager.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA0wBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T02:28:32.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "KioskForm.cs",
               "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\KioskForm.cs",
               "RelativeDocumentMoniker": "Project\\Forms\\KioskForm.cs",
               "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\KioskForm.cs",
               "RelativeToolTip": "Project\\Forms\\KioskForm.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAIwNEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAIoBAAAAAAAAAAAAwJoBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-06T14:19:40.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LoginForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "Project\\Forms\\LoginForm.cs",
@@ -74,18 +91,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "KioskForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\KioskForm.cs",
               "RelativeDocumentMoniker": "Project\\Forms\\KioskForm.cs",
               "ToolTip": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\KioskForm.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "Project\\Forms\\KioskForm.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T14:16:14.821Z"
+              "WhenOpened": "2025-12-06T14:16:14.821Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IngredientManageForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Forms\\IngredientManageForm.cs",
               "RelativeDocumentMoniker": "Project\\Forms\\IngredientManageForm.cs",
@@ -96,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SalesManager.cs",
               "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\SalesManager.cs",
               "RelativeDocumentMoniker": "Project\\Managers\\SalesManager.cs",
@@ -108,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MenuBook.cs",
               "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Managers\\MenuBook.cs",
               "RelativeDocumentMoniker": "Project\\Managers\\MenuBook.cs",
@@ -120,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "OutOfStockException.cs",
               "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\OutOfStockException.cs",
               "RelativeDocumentMoniker": "Project\\Models\\OutOfStockException.cs",
@@ -132,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "LoginFailedException.cs",
               "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\LoginFailedException.cs",
               "RelativeDocumentMoniker": "Project\\Models\\LoginFailedException.cs",
@@ -144,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "DataModels.cs",
               "DocumentMoniker": "C:\\Users\\op862\\OneDrive\\Desktop\\\uB300\uD559\uAD50\\2\uD559\uB144 2\uD559\uAE30\\C#\\20242966 \uAC15\uC138\uC6C5 \uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\\uAC1C\uC778 \uD504\uB85C\uC81D\uD2B8\\Project\\Project\\Models\\DataModels.cs",
               "RelativeDocumentMoniker": "Project\\Models\\DataModels.cs",

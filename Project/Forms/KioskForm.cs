@@ -267,12 +267,14 @@ namespace Project
 
             // =========================================================
             // ★ [조건: 인덱서 사용 2] 여기서 인덱서를 사용하여 메뉴 이름을 가져옵니다.
-            // (실제 기능상으로는 큰 의미 없지만, 인덱서 사용 조건을 만족하기 위함)
             // =========================================================
             if (myMenuBook != null)
             {
+                // 인덱서(this[int id])를 사용하여 메뉴 ID로 이름을 조회합니다.
                 string nameFromIndexer = myMenuBook[menu.Id];
-                // 필요하다면 Console.WriteLine(nameFromIndexer); 등으로 확인 가능
+
+                // [확인용] 실제 프로그램 실행 시 출력 창(Output)에서 확인할 수 있습니다.
+                Console.WriteLine($"[인덱서 확인] ID: {menu.Id}, Name: {nameFromIndexer}");
             }
 
             AddToCart(menu.Id, menu, 1);
@@ -406,5 +408,6 @@ namespace Project
             }
             return bmp;
         }
+
     }
 }

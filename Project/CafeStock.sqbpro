@@ -1,96 +1,103 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="CafeStock.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1791"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Ingredients" custom_title="0" dock_id="1" table="4,11:mainIngredients"/><dock_state state="000000ff00000000fd00000001000000020000000000000000fc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000015300ffffff000000000000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">-- 1. 자식 테이블 먼저 삭제 (참조 걸린 것들)
-DROP TABLE IF EXISTS Stock;
-DROP TABLE IF EXISTS SalesLogs;
-DROP TABLE IF EXISTS Recipes;
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="CafeStock.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1791"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Ingredients" custom_title="0" dock_id="1" table="4,11:mainIngredients"/><table title="MenuItems" custom_title="0" dock_id="2" table="4,9:mainMenuItems"/><dock_state state="000000ff00000000fd00000001000000020000023400000217fc0100000001fc00000000000002340000015d00fffffffa000000010100000002fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000015100fffffffb000000160064006f0063006b00420072006f00770073006500320100000000ffffffff0000015d00ffffff000002340000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="MenuItems" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="85"/><column index="2" value="140"/><column index="3" value="42"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1*">-- 1. [원재료 추가] 이미 있으면 무시(IGNORE), 없으면 추가
+INSERT OR IGNORE INTO Ingredients (Name, Unit, MinStock) VALUES 
+('바닐라 시럽', 'ml', 500),
+('카라멜 시럽', 'ml', 500),
+('카라멜 소스', 'g', 300),
+('초코 소스', 'g', 500),
+('연유', 'g', 500),
+('녹차 파우더', 'g', 300),
+('초코 파우더', 'g', 500),
+('요거트 파우더', 'g', 500),
+('아이스티 분말', 'g', 500),
+('레몬 청', 'g', 1000),
+('자몽 청', 'g', 1000),
+('청포도 베이스', 'g', 1000),
+('딸기 청', 'g', 1000),
+('휘핑 크림', 'ml', 500),
+('치즈 케이크', '개', 5),
+('식빵', '장', 20),
+('탄산수', 'ml', 2000),
+('얼음', '개', 1000),
+('물', 'ml', 10000),
+('원두', 'g', 1000),
+('우유', 'ml', 5000);
 
--- 2. 부모 테이블 삭제
-DROP TABLE IF EXISTS MenuItems;
-DROP TABLE IF EXISTS Ingredients;
-DROP TABLE IF EXISTS Users;
+-- 2. [메뉴 추가] 이미 있으면 무시, 없으면 추가
+INSERT OR IGNORE INTO MenuItems (Name, Price) VALUES 
+('바닐라 라떼', 4500),
+('카라멜 마키아또', 4800),
+('카페 모카', 4800),
+('연유 라떼', 4800),
+('녹차 라떼', 4500),
+('초코 라떼', 4000),
+('고구마 라떼', 4500),
+('플레인 요거트 스무디', 5000),
+('딸기 스무디', 5500),
+('쿠키 앤 크림 프라페', 5800),
+('레몬 에이드', 4500),
+('자몽 에이드', 4500),
+('청포도 에이드', 4500),
+('아이스티', 3500),
+('치즈 케이크', 5500),
+('허니 버터 브레드', 6000);
 
--- ==========================================
--- 3. 테이블 재생성 (MinStock 추가됨!)
--- ==========================================
-
--- 재료 테이블 (여기에 기준값 MinStock 저장)
-CREATE TABLE &quot;Ingredients&quot; (
-	&quot;IngredientID&quot;	INTEGER PRIMARY KEY AUTOINCREMENT,
-	&quot;Name&quot;			TEXT NOT NULL,
-	&quot;Unit&quot;			TEXT,
-	&quot;MinStock&quot;		REAL DEFAULT 5 -- 기본값 5
+-- 3. [안전 장치] 추가하려는 메뉴들의 '기존 레시피'만 싹 지우기 (중복 방지)
+-- (이미 카라멜 마키아또 레시피가 있어도, 여기서 지워지므로 아래에서 깔끔하게 다시 들어갑니다)
+DELETE FROM Recipes WHERE MenuItemID IN (
+    SELECT MenuItemID FROM MenuItems WHERE Name IN (
+        '바닐라 라떼', '카라멜 마키아또', '카페 모카', '연유 라떼', '녹차 라떼', 
+        '초코 라떼', '고구마 라떼', '플레인 요거트 스무디', '딸기 스무디', 
+        '쿠키 앤 크림 프라페', '레몬 에이드', '자몽 에이드', '청포도 에이드', 
+        '아이스티', '치즈 케이크', '허니 버터 브레드'
+    )
 );
 
--- 메뉴 테이블
-CREATE TABLE &quot;MenuItems&quot; (
-	&quot;MenuItemID&quot;	INTEGER PRIMARY KEY AUTOINCREMENT,
-	&quot;Name&quot;			TEXT NOT NULL,
-	&quot;Price&quot;			INTEGER
-);
+-- 4. [레시피 연결] 깨끗한 상태에서 다시 연결
 
--- 레시피 테이블
-CREATE TABLE &quot;Recipes&quot; (
-	&quot;RecipeID&quot;		INTEGER PRIMARY KEY AUTOINCREMENT,
-	&quot;MenuItemID&quot;	INTEGER,
-	&quot;IngredientID&quot;	INTEGER,
-	&quot;Amount&quot;		REAL,
-	FOREIGN KEY(&quot;MenuItemID&quot;) REFERENCES &quot;MenuItems&quot;(&quot;MenuItemID&quot;),
-	FOREIGN KEY(&quot;IngredientID&quot;) REFERENCES &quot;Ingredients&quot;(&quot;IngredientID&quot;)
-);
+-- [커피 변형]
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='바닐라 라떼'), (SELECT IngredientID FROM Ingredients WHERE Name='원두'), 20;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='바닐라 라떼'), (SELECT IngredientID FROM Ingredients WHERE Name='우유'), 200;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='바닐라 라떼'), (SELECT IngredientID FROM Ingredients WHERE Name='바닐라 시럽'), 30;
 
--- 재고 테이블
-CREATE TABLE &quot;Stock&quot; (
-	&quot;StockID&quot;		INTEGER PRIMARY KEY AUTOINCREMENT,
-	&quot;OwnerID&quot;		TEXT,
-	&quot;IngredientID&quot;	INTEGER,
-	&quot;Quantity&quot;		REAL DEFAULT 0,
-	FOREIGN KEY(&quot;IngredientID&quot;) REFERENCES &quot;Ingredients&quot;(&quot;IngredientID&quot;)
-);
+-- 카라멜 마키아또
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='카라멜 마키아또'), (SELECT IngredientID FROM Ingredients WHERE Name='원두'), 20;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='카라멜 마키아또'), (SELECT IngredientID FROM Ingredients WHERE Name='우유'), 200;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='카라멜 마키아또'), (SELECT IngredientID FROM Ingredients WHERE Name='카라멜 시럽'), 20;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='카라멜 마키아또'), (SELECT IngredientID FROM Ingredients WHERE Name='카라멜 소스'), 10;
 
--- 매출 테이블
-CREATE TABLE &quot;SalesLogs&quot; (
-	&quot;SaleID&quot;	INTEGER PRIMARY KEY AUTOINCREMENT,
-	&quot;OwnerID&quot;	TEXT,
-	&quot;SaleDate&quot;	TEXT DEFAULT CURRENT_TIMESTAMP,
-	&quot;MenuName&quot;	TEXT,
-	&quot;Qty&quot;		INTEGER,
-	&quot;TotalAmt&quot;	INTEGER
-);
+-- 카페 모카
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='카페 모카'), (SELECT IngredientID FROM Ingredients WHERE Name='원두'), 20;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='카페 모카'), (SELECT IngredientID FROM Ingredients WHERE Name='우유'), 200;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='카페 모카'), (SELECT IngredientID FROM Ingredients WHERE Name='초코 소스'), 30;
 
--- 사용자 테이블
-CREATE TABLE &quot;Users&quot; (
-	&quot;UserID&quot;	TEXT PRIMARY KEY,
-	&quot;Password&quot;	TEXT NOT NULL
-);
+-- 연유 라떼
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='연유 라떼'), (SELECT IngredientID FROM Ingredients WHERE Name='원두'), 20;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='연유 라떼'), (SELECT IngredientID FROM Ingredients WHERE Name='우유'), 200;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='연유 라떼'), (SELECT IngredientID FROM Ingredients WHERE Name='연유'), 30;
 
--- ==========================================
--- 4. 데이터 채우기 (기준값 설정 포함)
--- ==========================================
+-- [논커피]
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='녹차 라떼'), (SELECT IngredientID FROM Ingredients WHERE Name='우유'), 200;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='녹차 라떼'), (SELECT IngredientID FROM Ingredients WHERE Name='녹차 파우더'), 30;
 
-INSERT INTO Users VALUES ('boss1', '1234');
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='초코 라떼'), (SELECT IngredientID FROM Ingredients WHERE Name='우유'), 200;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='초코 라떼'), (SELECT IngredientID FROM Ingredients WHERE Name='초코 파우더'), 30;
 
--- ★ 핵심: 재료별로 최소 기준(MinStock) 다르게 설정!
-INSERT INTO Ingredients (IngredientID, Name, Unit, MinStock) VALUES (1, '원두', 'kg', 10);   -- 최소 10kg
-INSERT INTO Ingredients (IngredientID, Name, Unit, MinStock) VALUES (2, '물', 'L', 10);      -- 최소 10L
-INSERT INTO Ingredients (IngredientID, Name, Unit, MinStock) VALUES (3, '우유', 'L', 20);     -- 최소 20L
-INSERT INTO Ingredients (IngredientID, Name, Unit, MinStock) VALUES (4, '시럽', '병', 3);     -- 최소 3병
-INSERT INTO Ingredients (IngredientID, Name, Unit, MinStock) VALUES (5, '얼음', '봉', 50);    -- 최소 50봉
-INSERT INTO Ingredients (IngredientID, Name, Unit, MinStock) VALUES (6, '종이컵', '개', 100); -- 최소 100개
+-- [에이드]
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='레몬 에이드'), (SELECT IngredientID FROM Ingredients WHERE Name='탄산수'), 200;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='레몬 에이드'), (SELECT IngredientID FROM Ingredients WHERE Name='레몬 청'), 50;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='레몬 에이드'), (SELECT IngredientID FROM Ingredients WHERE Name='얼음'), 10;
 
--- 메뉴 및 레시피
-INSERT INTO MenuItems VALUES (1, '아메리카노', 2000);
-INSERT INTO MenuItems VALUES (2, '카페라떼', 3000);
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='자몽 에이드'), (SELECT IngredientID FROM Ingredients WHERE Name='탄산수'), 200;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='자몽 에이드'), (SELECT IngredientID FROM Ingredients WHERE Name='자몽 청'), 50;
 
-INSERT INTO Recipes (MenuItemID, IngredientID, Amount) VALUES (1, 1, 20); -- 아아: 원두
-INSERT INTO Recipes (MenuItemID, IngredientID, Amount) VALUES (1, 2, 200);-- 아아: 물
-INSERT INTO Recipes (MenuItemID, IngredientID, Amount) VALUES (2, 1, 20); -- 라떼: 원두
-INSERT INTO Recipes (MenuItemID, IngredientID, Amount) VALUES (2, 3, 150);-- 라떼: 우유
+-- [스무디]
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='딸기 스무디'), (SELECT IngredientID FROM Ingredients WHERE Name='우유'), 150;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='딸기 스무디'), (SELECT IngredientID FROM Ingredients WHERE Name='딸기 청'), 60;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='딸기 스무디'), (SELECT IngredientID FROM Ingredients WHERE Name='얼음'), 10;
 
--- ★ 테스트용 재고 (boss1) - 색깔 확인용
--- 원두(기준10): 0개 -&gt; 빨강(품절)
-INSERT INTO Stock (OwnerID, IngredientID, Quantity) VALUES ('boss1', 1, 0);
--- 우유(기준20): 5개 -&gt; 주황(부족)
-INSERT INTO Stock (OwnerID, IngredientID, Quantity) VALUES ('boss1', 3, 5);
--- 종이컵(기준100): 200개 -&gt; 초록(충분)
-INSERT INTO Stock (OwnerID, IngredientID, Quantity) VALUES ('boss1', 6, 200);
--- 시럽(기준3): 5개 -&gt; 초록(충분)
-INSERT INTO Stock (OwnerID, IngredientID, Quantity) VALUES ('boss1', 4, 5);</sql><current_tab id="0"/></tab_sql></sqlb_project>
+-- [디저트]
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='허니 버터 브레드'), (SELECT IngredientID FROM Ingredients WHERE Name='식빵'), 1;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='허니 버터 브레드'), (SELECT IngredientID FROM Ingredients WHERE Name='휘핑 크림'), 30;
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='허니 버터 브레드'), (SELECT IngredientID FROM Ingredients WHERE Name='카라멜 소스'), 20;
+
+INSERT INTO Recipes (MenuItemID, IngredientID, Amount) SELECT (SELECT MenuItemID FROM MenuItems WHERE Name='치즈 케이크'), (SELECT IngredientID FROM Ingredients WHERE Name='치즈 케이크'), 1;</sql><current_tab id="0"/></tab_sql></sqlb_project>
